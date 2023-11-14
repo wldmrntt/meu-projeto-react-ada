@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
-import './style.css'
+
+import styles from './titulo.module.css';
+
+import style from './task.module.css';
 
 export default function App() {
 
@@ -17,20 +20,20 @@ export default function App() {
 
   }, [])
 
- return (
-    <div className="seletor">
-      <h1>Efeitos Colaterais</h1>
-      <ol>
-        {tarefas.map((tarefas) => {
+  return (
+    <div>
+      <h1 className={styles.titulo}>Deploy na Vercel</h1>
+      <div>
+        {tarefas.map((tarefa) => {
           return (
-            <div>
-              <li key={tarefas.id}>
-                {tarefas.title}<span>{tarefas.completed ? ' - Tarefa Concluída' : ' - Não concluída'}</span>
-              </li>
+            <div className='task-item' key={tarefa.id}>
+              <p>{tarefa.id} - {tarefa.title} - <span className={tarefa.completed ? style.taskConcluida : style.taskNaoConcluida}>
+                {tarefa.completed ? 'Tarefa Concluída' : 'Não concluída'}
+              </span></p>
             </div>
           )
         })}
-      </ol>
+      </div>
     </div>
   )
 }

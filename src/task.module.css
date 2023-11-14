@@ -1,0 +1,25 @@
+.taskConcluida {
+    background-color: #ffffff3e;
+    color: #00ff00;
+    font-size: 700;
+    border: 0.1rem solid rgba(0,0,0.15);
+    border-radius: 5rem;
+    border-color: #00ff00;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+  
+  .taskNaoConcluida {
+    background-color: #ffffff3e;
+    color: #ff0000;
+    font-size: 700;
+    border: 0.1rem solid rgba(0,0,0.15);
+    border-radius: 5rem;
+    border-color: #ff0000;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
